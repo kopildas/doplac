@@ -23,3 +23,61 @@ body {
   
 }
 
+.curve-container {
+  position: relative;
+  width: 200px;
+  height: 100px;
+}
+
+.curve {
+  position: absolute;
+  top: 0%;
+  left: 11%;
+  width: 40%; /* Adjust the width to control the length of the first curve */
+  height: 70px;
+  border-radius: 0 0 100% 0%;
+  /* border: 2px solid #000; Adjust the color as needed */
+  /* border-bottom: nne; */
+  border-top: none;
+  border-left: none;
+}
+
+.curve2 {
+  position: absolute;
+  top: 75%;
+  left: -10%;
+  width: 40%; /* Adjust the width to control the length of the second curve */
+  height: 70px;
+  border-radius: 100% 0 0 0;
+  /* border: 2px solid #000; Adjust the color as needed */
+  border-bottom: none;
+  /* border-top: none; */
+  border-right: none;
+}
+
+.curve3 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 40%; /* Adjust the width to control the length of the first curve */
+  height: 70px;
+  border-radius: 0 0 0 100%;
+  /* border: 2px solid #000; Adjust the color as needed */
+  /* border-bottom: nne; */
+  border-top: none;
+  border-right: none;
+  /* border-left: none; */
+}
+
+.curve4 {
+  position: absolute;
+  top: 75%;
+  left: 74%;
+  width: 40%; /* Adjust the width to control the length of the second curve */
+  height: 70px;
+  border-radius: 0 100% 0 0;
+  /* border: 2px solid #000; Adjust the color as needed */
+  border-bottom: none;
+  /* border-top: none; */
+  border-left: none;
+}
