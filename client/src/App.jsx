@@ -13,7 +13,7 @@ function App() {
     setCount(count+1);
   }
   const notification = ()=> {
-    toast.success("Please click on the '+' button to show more !");
+    toast.success("Please click on the '+' button to show more..!");
   }
 
   useEffect(() => {
@@ -34,7 +34,10 @@ function App() {
         </>
       ))}
       </div>
-      <ToastContainer />
+      <ToastContainer 
+      position="bottom-center"
+      autoClose={2500}
+/>
     </>
   )
 }
