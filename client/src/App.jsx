@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import {data} from "./Data/Data.js";
 import './App.css'
 import TreeComponent from './Components/TreeComponent.jsx';
-import Dummy from './Components/Dummy.jsx';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,15 @@ function App() {
   const update = () =>{
     setCount(count+1);
   }
+  const notification = ()=> {
+    toast.success("Please click on the '+' button to show more !");
+  }
 
+  useEffect(() => {
+    notification()
+  
+    
+  }, [])
   
 
   return (
@@ -25,6 +34,7 @@ function App() {
         </>
       ))}
       </div>
+      <ToastContainer />
     </>
   )
 }
