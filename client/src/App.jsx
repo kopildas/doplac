@@ -21,7 +21,7 @@ function App() {
       {data.map((node, index) => (
         <>
         {index<=count && 
-        <TreeComponent key={index} node={node} lastIndex={data.length - 1} update={update} count={count}/>}
+        <TreeComponent key={index} index={index} node={node} lastIndex={data.length - 1} update={update} count={count}/>}
         </>
       ))}
       </div>

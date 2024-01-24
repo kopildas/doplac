@@ -19,7 +19,7 @@ export default function ChildComponent({index,childData}) {
   return (
     <div className='flex flex-col w-full bg-red-00'>
       
-        <div className=' bg-red-00 gap-3 flex flex-col items-center justify-center w-[482px] '>
+        <div className=' bg-red-00 gap-3 flex flex-col items-center justify-center w-[428px] '>
           {childData.curve && index%2===0 ? (
             <CurveEven  title={childData.title}  updateEven={updateEven}/>
           ) : (<CurveOdd title={childData.title}  updateOdd={updateOdd}/>)}
